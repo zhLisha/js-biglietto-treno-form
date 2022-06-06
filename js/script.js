@@ -52,7 +52,7 @@ submitButton.addEventListener ( 'click',
         document.getElementById('ticket-name').innerHTML = userName;
         document.getElementById('ticket-carriage').innerHTML = Math.floor(Math.random() * 9) + 1;
         document.getElementById('ticket-code').innerHTML = Math.floor(Math.random() * 9999) + 1000;
-        document.getElementById('ticket-price').innerHTML = finalPrice;
+        document.getElementById('ticket-price').innerHTML = finalPrice  + '€';
     }
 )
 

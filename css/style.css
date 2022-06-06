@@ -15,6 +15,7 @@ h2 {
     padding-top: 20px;
     font-weight: 700;
     color: white;
+    text-align: center;
 }
 
 label {
@@ -25,7 +26,7 @@ label {
     padding: 20px 0;
     background-color: white;
     border-radius: 10px;
-    width: 75%;
+    width: 85%;
 }
 
 /* BUTTON */
@@ -79,6 +80,12 @@ h5 {
 .ticket {
     display: none;
 }
+.ticket .row {
+    width: 95%;
+    margin: 0 auto;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
 
 .active {
     display: block;
@@ -89,13 +96,28 @@ h5 {
 }
 
 h3, h4{
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 17px;
 }
 
+.ticket > h3 {
+    padding-left: 20px;
+}
+
 h4 {
     font-size: 15px;
+    padding-bottom: 50px;
 }
+
+.ticket .col-3:first-child {
+    background-color: grey;
+    text-align: left;
+}
+
+.ticket .col-3, .ticket .col-2 {
+    padding: 20px 0 20px 20px;
+}
+
