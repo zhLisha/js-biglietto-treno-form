@@ -2,6 +2,7 @@
 - CALCOLARE LA TARIFFA BASE
 - CALCOLARE IL PREZZO CON LO SCONTO 
 - GENERARE UN BIGLIETTO DEL TRENO CON LE SEGUENTO INFO:
+0. Rendere visibile il biglietto
 1. Nomme Passeggero
 2. Offerta a sua disposizione
 3. Numero carrozza radom
@@ -27,9 +28,27 @@ submitButton.addEventListener ( 'click',
         if(userAge === 'minorenne') {
             discountPrice = standardPrice - (standardPrice * 20 / 100);
         } else if(userAge === 'over65') {
-            discountPrice = standardPrice - (standardPrice * 40 / 100)
+            discountPrice = standardPrice - (standardPrice * 40 / 100);
         } else {
-            discountPrice = standardPrice
+            discountPrice = standardPrice;
         }
+        
+        // Descizione della tariffa
+        if(userAge === 'minorenne') {
+            document.getElementById('ticket-offer').innerHTML = 'Biglietto Under 18';
+        } else if(userAge === 'over65') {
+            document.getElementById('ticket-offer').innerHTML = 'Biglietto Over 65';
+        } else {
+            document.getElementById('ticket-offer').innerHTML = 'Biglietto Standard';
+        }
+
+        //Rendere visibile il biglietto
+        document.querySelector('.ticket').classList.add('active');
+
+        // Inserimento dei dati forniti nel biglietto
+        document.getElementById('ticket-name').innerHTML = userName;
+        document.getElementById('ticket-carriage').innerHTML = Math.floor(Math.random() * 9) + 1;
+        document.getElementById('ticket-code').innerHTML = Math.floor(Math.random() * 9999) + 1000;
+        document.getElementById('ticket-price').innerHTML = discountPrice;
     }
 )

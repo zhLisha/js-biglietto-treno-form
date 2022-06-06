@@ -33,3 +33,28 @@ button {
 .info_user {
     padding: 20px 0;
 }
+
+/* Section 2 Ticket info */
+.ticket {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.container > h3 {
+    text-align: left;
+}
+
+h3, h4{
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+h4 {
+    font-size: 15px;
+}
