@@ -1,5 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* COMMON */
+
+.ms_container {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+/* BUTTON */
+
+.btn {
+    background-color: lightgrey;
+}
+
+.button_options {
+    padding-top: 50px;
+    justify-content: center;
+}
+
+button {
+    margin: 0 10px;
+}
+
+
+/* Section 1 */
+.info_user {
+    padding: 20px 0;
 }
