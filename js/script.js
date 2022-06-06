@@ -42,6 +42,8 @@ submitButton.addEventListener ( 'click',
             document.getElementById('ticket-offer').innerHTML = 'Biglietto Standard';
         }
         
+        // Trasformo numeri decimali
+        const finalPrice = discountPrice.toFixed(2);
 
         //Rendere visibile il biglietto
         document.querySelector('.ticket').classList.add('active');
@@ -50,7 +52,7 @@ submitButton.addEventListener ( 'click',
         document.getElementById('ticket-name').innerHTML = userName;
         document.getElementById('ticket-carriage').innerHTML = Math.floor(Math.random() * 9) + 1;
         document.getElementById('ticket-code').innerHTML = Math.floor(Math.random() * 9999) + 1000;
-        document.getElementById('ticket-price').innerHTML = discountPrice;
+        document.getElementById('ticket-price').innerHTML = finalPrice;
     }
 )
 
