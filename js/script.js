@@ -12,7 +12,7 @@
 
 
 // Generare biglietto
-let submitButton = document.getElementById('button_submit');
+const submitButton = document.getElementById('button_submit');
 submitButton.addEventListener ( 'click',
     function() {
         // Lettura delle informazioni inserite dal cliente
@@ -50,5 +50,18 @@ submitButton.addEventListener ( 'click',
         document.getElementById('ticket-carriage').innerHTML = Math.floor(Math.random() * 9) + 1;
         document.getElementById('ticket-code').innerHTML = Math.floor(Math.random() * 9999) + 1000;
         document.getElementById('ticket-price').innerHTML = discountPrice;
+    }
+)
+
+// Annulla biglietto
+const cancelButton = document.getElementById('button_cancel');
+cancelButton.addEventListener( 'click',
+    function() {
+        const userName = document.getElementById('user-name').value = '';
+        const userKm = document.getElementById('user-km').value = '';
+        const userAge = document.getElementById('user-age').value = '';
+
+
+        document.querySelector('.ticket').classList.remove('active');
     }
 )
