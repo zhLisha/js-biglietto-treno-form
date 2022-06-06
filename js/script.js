@@ -41,6 +41,7 @@ submitButton.addEventListener ( 'click',
         } else {
             document.getElementById('ticket-offer').innerHTML = 'Biglietto Standard';
         }
+        
 
         //Rendere visibile il biglietto
         document.querySelector('.ticket').classList.add('active');
@@ -57,11 +58,12 @@ submitButton.addEventListener ( 'click',
 const cancelButton = document.getElementById('button_cancel');
 cancelButton.addEventListener( 'click',
     function() {
+        // Cancellazione lettura dei dati inseriti
         const userName = document.getElementById('user-name').value = '';
         const userKm = document.getElementById('user-km').value = '';
         const userAge = document.getElementById('user-age').value = '';
 
-
+        // Rendere di nuovo invisibile il biglietto
         document.querySelector('.ticket').classList.remove('active');
     }
 )

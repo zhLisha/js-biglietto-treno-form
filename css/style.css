@@ -1,4 +1,11 @@
+:root {
+    --main-color: #b91450;
+}
+
 /* COMMON */
+body {
+    background-color: var(--main-color);
+}
 
 .ms_container {
     text-align: center;
@@ -7,16 +14,37 @@
 h2 {
     padding-top: 20px;
     font-weight: 700;
+    color: white;
 }
 
 label {
     padding-bottom: 10px;
 }
 
+.bg-white {
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    width: 75%;
+}
+
 /* BUTTON */
 
 .btn {
     background-color: lightgrey;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 0 5px 3px 5px;
+}
+
+.btn:hover {
+    color: var(--main-color);
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 .20rem orange;
 }
 
 .button_options {
@@ -28,10 +56,23 @@ button {
     margin: 0 10px;
 }
 
+/* Input */
+input {
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    text-align: center;
+    max-width: 80%;
+}
 
-/* Section 1 */
-.info_user {
-    padding: 20px 0;
+label:focus {
+    box-shadow: none;
+}
+
+
+/* Section 1 Info User */
+h5 {
+    font-size: 15px;
+    color: var(--main-color);
 }
 
 /* Section 2 Ticket info */

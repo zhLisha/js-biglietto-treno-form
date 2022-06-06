@@ -19,42 +19,43 @@
             </div>
 
             <!-- Info User -->
-            <div class="info_user">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="label-name">
-                                <label for="user-name">Nome  Cognome</label>
-                                <input type="text" name="user-name" id="user-name" placeholder="Inserisci nome e cognome">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="label-km">
-                                <label for="user-km">Km da percorrere</label>
-                                <input type="number" name="user-km" id="user-km" placeholder="Inserisci i km">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="label-age">
-                                <label for="user-age">Fascia d'età &nbsp;</label>
-                                <select name="user-age" id="user-age">
-                                    <option value="maggiorenne">Maggiorenne</option>
-                                    <option value="minorenne">Minorenne</option>
-                                    <option value="over65">Over 65</option>
-                                </select>
-                            </div>
+            <div class="container bg-white">
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <div class="label-name">
+                            <h5>Nome e Cognome</h5>
+                            <label for="user-name"></label>
+                            <input type="text" name="user-name" id="user-name" placeholder="Inserisci nome e cognome">
                         </div>
                     </div>
+                    <div class="col-3">
+                        <div class="label-km">
+                            <h5>Km da percorrere</h5>
+                            <label for="user-km"></label>
+                            <input type="number" name="user-km" id="user-km" placeholder="Inserisci i km">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="label-age">
+                            <h5>Fascia d'età</h5>
+                            <label for="user-age"></label>
+                            <select name="user-age" id="user-age">
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="minorenne">Minorenne</option>
+                                <option value="over65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
     
-                    <!-- Generate and Cancel Button -->
-                    <div class="row">
-                        <div class="col">
-                            <div class="button_options d-flex">
-                                <!-- Generate -->
-                                <button id="button_submit" type="button" class="btn">Genera</button>
-                                <!-- Cancel -->
-                                <button id="button_cancel" type="button" class="btn">Annulla</button>
-                            </div>
+                <!-- Generate and Cancel Button -->
+                <div class="row">
+                    <div class="col">
+                        <div class="button_options d-flex">
+                            <!-- Generate -->
+                            <button id="button_submit" type="button" class="btn">Genera</button>
+                            <!-- Cancel -->
+                            <button id="button_cancel" type="button" class="btn">Annulla</button>
                         </div>
                     </div>
                 </div>
@@ -68,11 +69,11 @@
             <div class="title">
                 <h2>IL TUO BIGLIETTO</h2>
             </div>
-            <div class="container ticket">
+            <div class="container bg-white ticket">
                 <h3>DETTAGLIO PASSEGGERO</h3>
                 <div class="row">
                     <div class="col">
-                        <h3>NOME PASSEGGER</h3>
+                        <h3>NOME PASSEGGERO</h3>
                         <span id="ticket-name"></span>
                     </div>
                     <div class="col">
